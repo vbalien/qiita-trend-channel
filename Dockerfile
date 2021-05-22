@@ -5,7 +5,7 @@ WORKDIR /app
 
 RUN set -x \
   && apk add --no-cache \
-  dcron
+  dcron bash
 
 RUN touch /var/log/crawl.log
 
