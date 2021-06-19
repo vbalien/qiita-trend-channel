@@ -9,8 +9,6 @@ RUN set -x \
 
 RUN touch /var/log/crawl.log
 
-RUN deno upgrade --canary
-
 RUN deno install -qA -n vr https://deno.land/x/velociraptor@1.0.0-beta.18/cli.ts
 
 # Cache the dependencies as a layer (this is re-run only when deps.ts is modified).
